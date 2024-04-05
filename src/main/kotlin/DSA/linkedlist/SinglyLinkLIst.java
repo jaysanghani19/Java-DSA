@@ -193,17 +193,17 @@ public class SinglyLinkLIst {
         }
     }
 
-//    Question No. (83) And Link - https://leetcode.com/problems/remove-duplicates-from-sorted-list/description/
+    //    Question No. (83) And Link - https://leetcode.com/problems/remove-duplicates-from-sorted-list/description/
     public void deleteDuplicates() {
         Node temp = head;
-        while(temp.next!=null){
-            if(temp.val == (temp.next).val){
+        while (temp.next != null) {
+            if (temp.val == (temp.next).val) {
                 Node temp2 = temp.next;
                 temp.next = temp2.next;
-                temp2.next=null;
+                temp2.next = null;
                 size--;
-            } else{
-                temp=temp.next;
+            } else {
+                temp = temp.next;
             }
         }
     }

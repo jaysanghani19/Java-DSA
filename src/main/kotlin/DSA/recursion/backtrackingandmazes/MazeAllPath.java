@@ -15,27 +15,26 @@ public class MazeAllPath {
 
     static void paths(StringBuilder p, boolean[][] arr, int row, int col) {
         if (row == arr.length - 1 && col == arr[0].length - 1) {
-            int [][] res = new int[arr.length][arr[0].length];
-            int r=0,c=0;
-            res[0][0]=1;
+            int[][] res = new int[arr.length][arr[0].length];
+            int r = 0, c = 0;
+            res[0][0] = 1;
             for (int i = 0; i < p.length(); i++) {
-                if (p.charAt(i)=='F'){
+                if (p.charAt(i) == 'F') {
                     r++;
                     c++;
-                    res[r][c]=i+2;
-                } else if (p.charAt(i)=='D') {
+                    res[r][c] = i + 2;
+                } else if (p.charAt(i) == 'D') {
                     r++;
-                    res[r][c]=i+2;
-                } else if (p.charAt(i)=='U') {
+                    res[r][c] = i + 2;
+                } else if (p.charAt(i) == 'U') {
                     r--;
-                    res[r][c]=i+2;
-                }
-                else if (p.charAt(i)=='R') {
+                    res[r][c] = i + 2;
+                } else if (p.charAt(i) == 'R') {
                     c++;
-                    res[r][c]=i+2;
-                } else if (p.charAt(i)=='L') {
+                    res[r][c] = i + 2;
+                } else if (p.charAt(i) == 'L') {
                     c--;
-                    res[r][c]=i+2;
+                    res[r][c] = i + 2;
                 }
             }
             for (int i = 0; i < res.length; i++) {

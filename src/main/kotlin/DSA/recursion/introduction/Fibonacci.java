@@ -5,11 +5,11 @@ public class Fibonacci {
         System.out.println(nThFibonacci(40));
     }
 
-    static long nThFibonacci(int n){
-        if (n==0) return 0;
-        if (n==1) return 1;
+    static long nThFibonacci(int n) {
+        if (n == 0) return 0;
+        if (n == 1) return 1;
         else {
-            return nThFibonacci(n-1)+nThFibonacci(n-2);
+            return nThFibonacci(n - 1) + nThFibonacci(n - 2);
         }
     }
 }

@@ -8,7 +8,7 @@ public class MazesProblem {
                 {true, true, false},
                 {true, false, true},
                 {true, true, true},
-                {true,false,true}
+                {true, false, true}
         };
         pathWithObstacle(new StringBuilder(), arr, 0, 0);
     }

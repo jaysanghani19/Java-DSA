@@ -7,17 +7,17 @@ public class InsertionSort {
 
     public static void main(String[] args) {
 //        int [] arr = {2,1,5,2,4,8,19,4};
-        int [] arr = {2,5,3,6,8,90,20,54,100,258,25,63,74,58,260};
+        int[] arr = {2, 5, 3, 6, 8, 90, 20, 54, 100, 258, 25, 63, 74, 58, 260};
         System.out.println(Arrays.toString(insertionSort(arr)));
     }
 
-    static int[] insertionSort(int [] arr){
-        for (int i =0;i<arr.length-1;i++){
-            for (int j=i+1;j>0;j--){
-                if (arr[j]<arr[j-1]){
+    static int[] insertionSort(int[] arr) {
+        for (int i = 0; i < arr.length - 1; i++) {
+            for (int j = i + 1; j > 0; j--) {
+                if (arr[j] < arr[j - 1]) {
                     int temp = arr[j];
-                    arr[j]=arr[j-1];
-                    arr[j-1]=temp;
+                    arr[j] = arr[j - 1];
+                    arr[j - 1] = temp;
                 } else {
                     break;
                 }
@@ -26,7 +26,7 @@ public class InsertionSort {
         return arr;
     }
 
-//    static int[] insertionSort2(int [] arr){
+    //    static int[] insertionSort2(int [] arr){
 //        ArrayList<Integer> res = new ArrayList<>();
 //        for (int i =0;i<arr.length;i++){
 //            if (i==0){

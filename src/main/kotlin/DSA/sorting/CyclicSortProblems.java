@@ -6,11 +6,11 @@ import java.util.List;
 
 public class CyclicSortProblems {
     public static void main(String[] args) {
-        int[] arr = {1,1};
+        int[] arr = {1, 1};
         System.out.println(problem448(arr));
     }
 
-//    Problem Link - https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/description/
+    //    Problem Link - https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/description/
     static List<Integer> problem448(int[] arr) {
         List<Integer> res = new ArrayList<>();
         for (int i = 0; i < arr.length; i++) {
